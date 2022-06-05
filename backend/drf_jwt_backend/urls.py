@@ -21,3 +21,9 @@ urlpatterns = [
     path('api/auth/', include('authentication.urls')),
     path('api/cars/', include('cars.urls')),
 ]
+
+urlpatterns = [
+     path('admin/', admin.site.urls),
+    path('api/auth/', include('authentication.urls')),
+    path('api/birmingham_vibe/', include('birmingham_vibe.urls')),
+]
